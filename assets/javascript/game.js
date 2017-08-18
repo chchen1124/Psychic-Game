@@ -13,6 +13,7 @@ document.onkeyup=function(event)
 	{
 		wins++;
 		guesses_left=9;
+		guesses_so_far=[];
 		computerGuess=computerChoices[Math.floor(Math.random()*computerChoices.length)];
 
 	}
