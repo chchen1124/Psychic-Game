@@ -2,7 +2,7 @@ var wins=0;
 var losses=0;
 var guesses_left=9;
 var guesses_so_far=[];
-var computerChoices=['a','b','c','d','e','f','g','h','i','j'];
+var computerChoices=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 var computerGuess=computerChoices[Math.floor(Math.random()*computerChoices.length)];
 
 document.onkeyup=function(event)
