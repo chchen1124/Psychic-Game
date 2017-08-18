@@ -19,15 +19,17 @@ document.onkeyup=function(event)
 	else
 	{
 		guesses_left--;
+		myguesses(guesses_so_far,userGuess);
 	}
 
 	if(guesses_left==0)
 	{
 		losses++;
 		guesses_left=9;
+		guesses_so_far=[];
 		computerGuess=computerChoices[Math.floor(Math.random()*computerChoices.length)];
 	}
-	myguesses(guesses_so_far,userGuess);
+	
 	html="<p> Wins: "+wins+"</p><br>"+"<p> Losses: "+losses+"</p><br>"+
 	"<p>Guesses Left: "+guesses_left+"</p><br>"+"<p>Your guesses so far: "+
 	guesses_so_far.join(',')+"</p><br>";
